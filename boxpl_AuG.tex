@@ -1,0 +1,238 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.00000,0.39216,0.00000}%
+\definecolor{mycolor3}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor4}{rgb}{0.92900,0.69400,0.12500}%
+\definecolor{mycolor5}{rgb}{0.49400,0.18400,0.55600}%
+\definecolor{mycolor6}{rgb}{0.50196,0.00000,0.00000}%
+\definecolor{mycolor7}{rgb}{0.46600,0.67400,0.18800}%
+\definecolor{mycolor8}{rgb}{0.30100,0.74500,0.93300}%
+\definecolor{mycolor9}{rgb}{0.63500,0.07800,0.18400}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.052in,
+at={(0.758in,0.994in)},
+scale only axis,
+xmin=0.5,
+xmax=3.5,
+xtick={1,2,3},
+xticklabels={{$\text{AuC-G}_{\text{0-120}}$},{$\text{AuC-G}_{\text{30-120}}$},{$\text{AuC-G}_{\text{60-120}}$}},
+xticklabel style={rotate=270},
+xlabel style={font=\color{white!15!black}},
+xlabel={Time intervals [minutes]},
+ymin=0.1,
+ymax=1,
+ylabel style={font=\color{white!15!black}},
+ylabel={Area under the Glucose curve [a.u.]},
+axis background/.style={fill=white},
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=mycolor1, draw=none, mark size=0.3pt, mark=*, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+1	0.816696019725255\\
+1	0.831278619232124\\
+1	0.839732300105671\\
+1	0.850088059175766\\
+1	0.858400845368087\\
+1	0.867065868263473\\
+1	0.87284255019373\\
+1	0.878971468827052\\
+1	0.890524832687566\\
+1	0.902219091229306\\
+1	0.969144064811553\\
+1	1\\
+};
+\addplot [color=mycolor2, dotted, forget plot]
+  table[row sep=crcr]{%
+1	0.814019020781966\\
+1	0.336245156745333\\
+};
+\addplot [color=mycolor2, forget plot]
+  table[row sep=crcr]{%
+0.925	0.814019020781966\\
+1.075	0.814019020781966\\
+};
+\addplot [color=mycolor2, forget plot]
+  table[row sep=crcr]{%
+0.925	0.336245156745333\\
+1.075	0.336245156745333\\
+};
+\draw[fill=green!60!violet, draw=black] (axis cs:0.925,0.487495597041212) rectangle (axis cs:1.075,0.618668545262416);
+\addplot [color=black, line width=1.5pt, forget plot]
+  table[row sep=crcr]{%
+0.925	0.54786896794646\\
+1.075	0.54786896794646\\
+};
+\addplot [color=mycolor3, draw=none, mark size=0.3pt, mark=*, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+2	0.586839749328558\\
+2	0.588667561921814\\
+2	0.592808116980006\\
+2	0.60135034318114\\
+2	0.606162339600119\\
+2	0.610153685467025\\
+2	0.625335720680394\\
+2	0.645963891375709\\
+2	0.650850492390331\\
+2	0.654021187705163\\
+2	0.662749925395404\\
+2	0.667002387347061\\
+2	0.701395105938526\\
+2	1\\
+};
+\addplot [color=mycolor2, dotted, forget plot]
+  table[row sep=crcr]{%
+2	0.583109519546404\\
+2	0.152529095792301\\
+};
+\addplot [color=mycolor2, forget plot]
+  table[row sep=crcr]{%
+1.925	0.583109519546404\\
+2.075	0.583109519546404\\
+};
+\addplot [color=mycolor2, forget plot]
+  table[row sep=crcr]{%
+1.925	0.152529095792301\\
+2.075	0.152529095792301\\
+};
+\draw[fill=green!60!violet, draw=black] (axis cs:1.925,0.314868695911668) rectangle (axis cs:2.075,0.423157266487616);
+\addplot [color=black, line width=1.5pt, forget plot]
+  table[row sep=crcr]{%
+1.925	0.368024470307371\\
+2.075	0.368024470307371\\
+};
+\addplot [color=mycolor4, draw=none, mark size=0.3pt, mark=*, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+3	0.792520935604967\\
+3	0.795360477428049\\
+3	0.796467417460776\\
+3	0.796996823563384\\
+3	0.797766868803542\\
+3	0.81302339012417\\
+3	0.815333525844643\\
+3	0.824477813071518\\
+3	0.837712965636731\\
+3	0.842188853595149\\
+3	0.844210222350563\\
+3	0.84512465107325\\
+3	0.867648474347868\\
+3	0.899942246606988\\
+3	0.920540956781211\\
+3	0.940177110405236\\
+3	0.965877370295505\\
+3	0.988208682260083\\
+};
+\addplot [color=mycolor2, dotted, forget plot]
+  table[row sep=crcr]{%
+3	0.790403311194533\\
+3	0.137693714505727\\
+};
+\addplot [color=mycolor2, forget plot]
+  table[row sep=crcr]{%
+2.925	0.790403311194533\\
+3.075	0.790403311194533\\
+};
+\addplot [color=mycolor2, forget plot]
+  table[row sep=crcr]{%
+2.925	0.137693714505727\\
+3.075	0.137693714505727\\
+};
+\draw[fill=green!60!violet, draw=black] (axis cs:2.925,0.370921166618539) rectangle (axis cs:3.075,0.539416690730581);
+\addplot [color=black, line width=1.5pt, forget plot]
+  table[row sep=crcr]{%
+2.925	0.445808066223891\\
+3.075	0.445808066223891\\
+};
+\addlegendentry{Healthy}
+
+\addplot [color=mycolor5, draw=none, mark size=0.3pt, mark=+, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+1	0.428672067629447\\
+};
+\addplot [color=mycolor6, dotted, forget plot]
+  table[row sep=crcr]{%
+1	0.975836562169778\\
+1	0.474885523071504\\
+};
+\addplot [color=mycolor6, forget plot]
+  table[row sep=crcr]{%
+0.925	0.975836562169778\\
+1.075	0.975836562169778\\
+};
+\addplot [color=mycolor6, forget plot]
+  table[row sep=crcr]{%
+0.925	0.474885523071504\\
+1.075	0.474885523071504\\
+};
+\draw[fill=red!60!teal, draw=black] (axis cs:0.925,0.652518492426911) rectangle (axis cs:1.075,0.797957027122226);
+\addplot [color=black, line width=1.5pt, forget plot]
+  table[row sep=crcr]{%
+0.925	0.729693554068334\\
+1.075	0.729693554068334\\
+};
+\addplot [color=mycolor7, draw=none, mark size=0.3pt, mark=+, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+2	0.747127723067741\\
+};
+\addplot [color=mycolor6, dotted, forget plot]
+  table[row sep=crcr]{%
+2	0.70728886899433\\
+2	0.283907788719785\\
+};
+\addplot [color=mycolor6, forget plot]
+  table[row sep=crcr]{%
+1.925	0.70728886899433\\
+2.075	0.70728886899433\\
+};
+\addplot [color=mycolor6, forget plot]
+  table[row sep=crcr]{%
+1.925	0.283907788719785\\
+2.075	0.283907788719785\\
+};
+\draw[fill=red!60!teal, draw=black] (axis cs:1.925,0.436642047150104) rectangle (axis cs:2.075,0.546721128021486);
+\addplot [color=black, line width=1.5pt, forget plot]
+  table[row sep=crcr]{%
+1.925	0.48769024171889\\
+2.075	0.48769024171889\\
+};
+\addplot [color=mycolor8, draw=none, mark size=0.3pt, mark=+, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+3	1\\
+};
+\addplot [color=mycolor9, draw=none, mark size=0.3pt, mark=+, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+3	0.309846953508519\\
+};
+\addplot [color=mycolor6, dotted, forget plot]
+  table[row sep=crcr]{%
+3	0.954904225623255\\
+3	0.326499181826932\\
+};
+\addplot [color=mycolor6, forget plot]
+  table[row sep=crcr]{%
+2.925	0.954904225623255\\
+3.075	0.954904225623255\\
+};
+\addplot [color=mycolor6, forget plot]
+  table[row sep=crcr]{%
+2.925	0.326499181826932\\
+3.075	0.326499181826932\\
+};
+\draw[fill=red!60!teal, draw=black] (axis cs:2.925,0.57356338434883) rectangle (axis cs:3.075,0.74258831456348);
+\addplot [color=black, line width=1.5pt, forget plot]
+  table[row sep=crcr]{%
+2.925	0.658484935989989\\
+3.075	0.658484935989989\\
+};
+\addlegendentry{Diabetic}
+
+\end{axis}
+\end{tikzpicture}%

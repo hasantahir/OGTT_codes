@@ -1,0 +1,322 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+\definecolor{mycolor4}{rgb}{0.49400,0.18400,0.55600}%
+\definecolor{mycolor5}{rgb}{0.46600,0.67400,0.18800}%
+\definecolor{mycolor6}{rgb}{0.30100,0.74500,0.93300}%
+\definecolor{mycolor7}{rgb}{0.63500,0.07800,0.18400}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=2.868in,
+at={(0.758in,1.178in)},
+scale only axis,
+xmin=0.5,
+xmax=10.5,
+xtick={1,2,3,4,5,6,7,8,9,10},
+xticklabels={{Age},{ETHN},{BMI},{PG0},{PG120},{$\text{AuC-G}_{\text{0-120}}$},{$\Delta\text{ I/}\Delta\text{ G}_{\text{0-30}}$},{$\Delta\text{ I/}\Delta\text{ G M}_{\text{0-30}}$},{$\Delta\text{ I/}\Delta\text{ G M}_{\text{0-120}}$},{Matsuda}},
+xticklabel style={rotate=270},
+xlabel style={font=\color{white!15!black}},
+xlabel={Features},
+ymin=0.3,
+ymax=1,
+ylabel style={font=\color{white!15!black}},
+ylabel={Validation Accuracy},
+axis background/.style={fill=white}
+]
+\addplot [color=mycolor1, draw=none, mark size=1.3pt, mark=+, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+1	0.75531914893617\\
+1	0.75531914893617\\
+};
+\addplot [color=black, dotted, forget plot]
+  table[row sep=crcr]{%
+1	0.723404255319149\\
+1	0.542553191489362\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+0.925	0.723404255319149\\
+1.075	0.723404255319149\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+0.925	0.542553191489362\\
+1.075	0.542553191489362\\
+};
+\draw[fill=white!60!green, draw=black] (axis cs:0.925,0.601063829787234) rectangle (axis cs:1.075,0.659574468085106);
+\addplot [color=black, line width=1.5pt, forget plot]
+  table[row sep=crcr]{%
+0.925	0.627659574468085\\
+1.075	0.627659574468085\\
+};
+\addplot [color=black, dotted, forget plot]
+  table[row sep=crcr]{%
+2	0.510638297872341\\
+2	0.308510638297872\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+1.925	0.510638297872341\\
+2.075	0.510638297872341\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+1.925	0.308510638297872\\
+2.075	0.308510638297872\\
+};
+\draw[fill=white!60!green, draw=black] (axis cs:1.925,0.382978723404255) rectangle (axis cs:2.075,0.436170212765957);
+\addplot [color=black, line width=1.5pt, forget plot]
+  table[row sep=crcr]{%
+1.925	0.414893617021277\\
+2.075	0.414893617021277\\
+};
+\addplot [color=mycolor2, draw=none, mark size=1.3pt, mark=+, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+3	0.776595744680851\\
+3	0.776595744680851\\
+};
+\addplot [color=mycolor3, draw=none, mark size=1.3pt, mark=+, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+3	0.553191489361702\\
+};
+\addplot [color=black, dotted, forget plot]
+  table[row sep=crcr]{%
+3	0.765957446808511\\
+3	0.574468085106383\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+2.925	0.765957446808511\\
+3.075	0.765957446808511\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+2.925	0.574468085106383\\
+3.075	0.574468085106383\\
+};
+\draw[fill=white!60!green, draw=black] (axis cs:2.925,0.638297872340426) rectangle (axis cs:3.075,0.691489361702128);
+\addplot [color=black, line width=1.5pt, forget plot]
+  table[row sep=crcr]{%
+2.925	0.670212765957447\\
+3.075	0.670212765957447\\
+};
+\addplot [color=black, dotted, forget plot]
+  table[row sep=crcr]{%
+4	0.904255319148936\\
+4	0.734042553191489\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+3.925	0.904255319148936\\
+4.075	0.904255319148936\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+3.925	0.734042553191489\\
+4.075	0.734042553191489\\
+};
+\draw[fill=white!60!green, draw=black] (axis cs:3.925,0.797872340425532) rectangle (axis cs:4.075,0.851063829787234);
+\addplot [color=black, line width=1.5pt, forget plot]
+  table[row sep=crcr]{%
+3.925	0.819148936170213\\
+4.075	0.819148936170213\\
+};
+\addplot [color=mycolor4, draw=none, mark size=1.3pt, mark=+, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+5	1\\
+5	1\\
+5	1\\
+};
+\addplot [color=mycolor5, draw=none, mark size=1.3pt, mark=+, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+5	0.925531914893617\\
+5	0.936170212765957\\
+5	0.946808510638298\\
+5	0.946808510638298\\
+5	0.946808510638298\\
+5	0.946808510638298\\
+5	0.946808510638298\\
+5	0.946808510638298\\
+5	0.946808510638298\\
+5	0.946808510638298\\
+5	0.946808510638298\\
+5	0.946808510638298\\
+5	0.946808510638298\\
+};
+\addplot [color=black, dotted, forget plot]
+  table[row sep=crcr]{%
+5	0.98936170212766\\
+5	0.957446808510638\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+4.925	0.98936170212766\\
+5.075	0.98936170212766\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+4.925	0.957446808510638\\
+5.075	0.957446808510638\\
+};
+\draw[fill=white!60!green, draw=black] (axis cs:4.925,0.968085106382979) rectangle (axis cs:5.075,0.978723404255319);
+\addplot [color=black, line width=1.5pt, forget plot]
+  table[row sep=crcr]{%
+4.925	0.968085106382979\\
+5.075	0.968085106382979\\
+};
+\addplot [color=mycolor6, draw=none, mark size=1.3pt, mark=+, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+6	1\\
+6	1\\
+6	1\\
+};
+\addplot [color=mycolor7, draw=none, mark size=1.3pt, mark=+, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+6	0.882978723404255\\
+6	0.904255319148936\\
+6	0.925531914893617\\
+6	0.925531914893617\\
+6	0.925531914893617\\
+};
+\addplot [color=black, dotted, forget plot]
+  table[row sep=crcr]{%
+6	0.98936170212766\\
+6	0.936170212765957\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+5.925	0.98936170212766\\
+6.075	0.98936170212766\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+5.925	0.936170212765957\\
+6.075	0.936170212765957\\
+};
+\draw[fill=white!60!green, draw=black] (axis cs:5.925,0.957446808510638) rectangle (axis cs:6.075,0.973404255319149);
+\addplot [color=black, line width=1.5pt, forget plot]
+  table[row sep=crcr]{%
+5.925	0.968085106382979\\
+6.075	0.968085106382979\\
+};
+\addplot [color=mycolor1, draw=none, mark size=1.3pt, mark=+, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+7	0.606382978723404\\
+};
+\addplot [color=black, dotted, forget plot]
+  table[row sep=crcr]{%
+7	0.595744680851064\\
+7	0.404255319148936\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+6.925	0.595744680851064\\
+7.075	0.595744680851064\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+6.925	0.404255319148936\\
+7.075	0.404255319148936\\
+};
+\draw[fill=white!60!green, draw=black] (axis cs:6.925,0.468085106382979) rectangle (axis cs:7.075,0.521276595744681);
+\addplot [color=black, line width=1.5pt, forget plot]
+  table[row sep=crcr]{%
+6.925	0.48936170212766\\
+7.075	0.48936170212766\\
+};
+\addplot [color=mycolor2, draw=none, mark size=1.3pt, mark=+, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+8	0.638297872340426\\
+8	0.648936170212766\\
+};
+\addplot [color=black, dotted, forget plot]
+  table[row sep=crcr]{%
+8	0.861702127659574\\
+8	0.659574468085106\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+7.925	0.861702127659574\\
+8.075	0.861702127659574\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+7.925	0.659574468085106\\
+8.075	0.659574468085106\\
+};
+\draw[fill=white!60!green, draw=black] (axis cs:7.925,0.734042553191489) rectangle (axis cs:8.075,0.787234042553192);
+\addplot [color=black, line width=1.5pt, forget plot]
+  table[row sep=crcr]{%
+7.925	0.765957446808511\\
+8.075	0.765957446808511\\
+};
+\addplot [color=mycolor3, draw=none, mark size=1.3pt, mark=+, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+9	0.712765957446808\\
+};
+\addplot [color=mycolor4, draw=none, mark size=1.3pt, mark=+, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+9	0.414893617021277\\
+};
+\addplot [color=black, dotted, forget plot]
+  table[row sep=crcr]{%
+9	0.670212765957447\\
+9	0.457446808510638\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+8.925	0.670212765957447\\
+9.075	0.670212765957447\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+8.925	0.457446808510638\\
+9.075	0.457446808510638\\
+};
+\draw[fill=white!60!green, draw=black] (axis cs:8.925,0.542553191489362) rectangle (axis cs:9.075,0.606382978723404);
+\addplot [color=black, line width=1.5pt, forget plot]
+  table[row sep=crcr]{%
+8.925	0.574468085106383\\
+9.075	0.574468085106383\\
+};
+\addplot [color=mycolor5, draw=none, mark size=1.3pt, mark=+, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+10	0.829787234042553\\
+};
+\addplot [color=mycolor6, draw=none, mark size=1.3pt, mark=+, mark options={solid, fill=black, black}, forget plot]
+  table[row sep=crcr]{%
+10	0.563829787234043\\
+10	0.606382978723404\\
+};
+\addplot [color=black, dotted, forget plot]
+  table[row sep=crcr]{%
+10	0.819148936170213\\
+10	0.627659574468085\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+9.925	0.819148936170213\\
+10.075	0.819148936170213\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+9.925	0.627659574468085\\
+10.075	0.627659574468085\\
+};
+\draw[fill=white!60!green, draw=black] (axis cs:9.925,0.691489361702128) rectangle (axis cs:10.075,0.74468085106383);
+\addplot [color=black, line width=1.5pt, forget plot]
+  table[row sep=crcr]{%
+9.925	0.712765957446808\\
+10.075	0.712765957446808\\
+};
+\end{axis}
+\end{tikzpicture}%

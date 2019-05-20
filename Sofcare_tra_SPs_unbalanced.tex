@@ -1,0 +1,105 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.49804,0.78824,0.49804}%
+\definecolor{mycolor2}{rgb}{0.74510,0.68235,0.83137}%
+\definecolor{mycolor3}{rgb}{0.99216,0.75294,0.52549}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=1,
+xmax=8,
+xlabel style={font=\color{white!15!black}},
+xlabel={Number of Features},
+ymin=0.1,
+ymax=1,
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids,
+legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=blue, draw=none, mark size=0.0pt, mark=square*, mark options={solid, fill=blue, blue}, forget plot]
+ plot [error bars/.cd, y dir = both, y explicit]
+ table[row sep=crcr, y error plus index=2, y error minus index=3]{%
+1	0.254779411764706	0.043014705882353	0.043014705882353\\
+2	0.608823529411765	0.193382352941177	0.193382352941177\\
+3	0.732720588235294	0.081985294117647	0.081985294117647\\
+4	0.758455882352941	0.0621323529411765	0.0621323529411765\\
+5	0.762867647058823	0.0606617647058824	0.0606617647058824\\
+6	0.769852941176471	0.0602941176470588	0.0602941176470588\\
+7	0.8	0.0264705882352941	0.0264705882352941\\
+8	0.813235294117647	0.013235294117647	0.013235294117647\\
+};
+\addplot [color=red, draw=none, mark size=0.0pt, mark=square*, mark options={solid, fill=red, red}, forget plot]
+ plot [error bars/.cd, y dir = both, y explicit]
+ table[row sep=crcr, y error plus index=2, y error minus index=3]{%
+1	0.165833333333333	0.0566666666666667	0.0566666666666667\\
+2	0.583333333333333	0.218333333333333	0.218333333333333\\
+3	0.7225	0.0925	0.0925\\
+4	0.751666666666667	0.07	0.07\\
+5	0.7575	0.0683333333333333	0.0683333333333333\\
+6	0.76625	0.0679166666666666	0.0679166666666666\\
+7	0.801666666666667	0.0291666666666667	0.0291666666666667\\
+8	0.81625	0.0129166666666667	0.0129166666666667\\
+};
+\addplot [color=green, draw=none, mark size=0.0pt, mark=square*, mark options={solid, fill=green, green}, forget plot]
+ plot [error bars/.cd, y dir = both, y explicit]
+ table[row sep=crcr, y error plus index=2, y error minus index=3]{%
+1	0.921875	0.059375	0.059375\\
+2	0.80625	0.025	0.025\\
+3	0.809375	0.021875	0.021875\\
+4	0.815625	0.021875	0.021875\\
+5	0.8125	0.01875	0.01875\\
+6	0.8	0.01875	0.01875\\
+7	0.79375	0.025	0.025\\
+8	0.76875	0.0375	0.0375\\
+};
+\addplot [color=mycolor1, draw=none, mark size=3.2pt, mark=square*, mark options={solid, fill=blue, black}]
+  table[row sep=crcr]{%
+1	0.242705882352941\\
+2	0.580198529411765\\
+3	0.77214705882353\\
+4	0.777919117647059\\
+5	0.785220588235294\\
+6	0.803397058823529\\
+7	0.811242647058823\\
+8	0.813014705882353\\
+};
+\addlegendentry{Accuracy}
+
+\addplot [color=mycolor2, draw=none, mark size=3.2pt, mark=square*, mark options={solid, fill=red, black}]
+  table[row sep=crcr]{%
+1	0.1517\\
+2	0.550683333333334\\
+3	0.767216666666667\\
+4	0.773441666666667\\
+5	0.782016666666667\\
+6	0.803508333333333\\
+7	0.813566666666667\\
+8	0.817608333333333\\
+};
+\addlegendentry{Sensitivity}
+
+\addplot [color=mycolor3, draw=none, mark size=3.2pt, mark=square*, mark options={solid, fill=green, black}]
+  table[row sep=crcr]{%
+1	0.92525\\
+2	0.801562500000001\\
+3	0.809125\\
+4	0.8115\\
+5	0.80925\\
+6	0.8025625\\
+7	0.7938125\\
+8	0.7785625\\
+};
+\addlegendentry{Specificity}
+
+\end{axis}
+\end{tikzpicture}%

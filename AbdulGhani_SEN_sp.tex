@@ -1,0 +1,63 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.89412,0.10196,0.10980}%
+\definecolor{mycolor2}{rgb}{0.21569,0.49412,0.72157}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=1,
+xmax=10,
+xlabel style={font=\color{white!15!black}},
+xlabel={Number of Features},
+ymin=0,
+ymax=1,
+ylabel style={font=\color{white!15!black}},
+ylabel={Sensitivity},
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids,
+legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=mycolor1, draw=none, mark size=3.5pt, mark=square*, mark options={solid, fill=red, red}]
+ plot [error bars/.cd, y dir = both, y explicit]
+ table[row sep=crcr, y error plus index=2, y error minus index=3]{%
+1	0.5	0.4375	0.4375\\
+2	0.75	0.1875	0.1875\\
+3	0.75	0.1875	0.1875\\
+4	0.78125	0.21875	0.21875\\
+5	0.71875	0.21875	0.21875\\
+6	0.75	0.1875	0.1875\\
+7	0.78125	0.15625	0.15625\\
+8	0.8125	0.1875	0.1875\\
+9	0.78125	0.21875	0.21875\\
+10	0.78125	0.15625	0.15625\\
+};
+\addlegendentry{Training}
+
+\addplot [color=mycolor2, draw=none, mark size=3.5pt, mark=square*, mark options={solid, fill=blue, blue}]
+ plot [error bars/.cd, y dir = both, y explicit]
+ table[row sep=crcr, y error plus index=2, y error minus index=3]{%
+1	0.426136363636364	0.301136363636364	0.301136363636364\\
+2	0.630681818181818	0.164772727272727	0.164772727272727\\
+3	0.642045454545455	0.164772727272727	0.164772727272727\\
+4	0.670454545454545	0.113636363636364	0.113636363636364\\
+5	0.727272727272727	0.113636363636364	0.113636363636364\\
+6	0.761363636363636	0.0909090909090909	0.0909090909090909\\
+7	0.778409090909091	0.0852272727272727	0.0852272727272727\\
+8	0.789772727272727	0.0738636363636364	0.0738636363636364\\
+9	0.795454545454545	0.0681818181818182	0.0681818181818182\\
+10	0.789772727272727	0.0738636363636364	0.0738636363636364\\
+};
+\addlegendentry{Validation}
+
+\end{axis}
+\end{tikzpicture}%

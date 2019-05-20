@@ -1,0 +1,115 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.89412,0.10196,0.10980}%
+\definecolor{mycolor2}{rgb}{0.21569,0.49412,0.72157}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=1,
+xmax=10,
+xlabel style={font=\color{white!15!black}},
+xlabel={Number of Features},
+ymin=0.3,
+ymax=1,
+ylabel style={font=\color{white!15!black}},
+ylabel={Specificity},
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids,
+legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=mycolor1, line width=1.4pt]
+ plot [error bars/.cd, y dir = both, y explicit]
+ table[row sep=crcr, y error plus index=2, y error minus index=3]{%
+1	0.78125	0.15625	0.15625\\
+2	0.875	0.0625	0.0625\\
+3	0.9375	0.0625	0.0625\\
+4	0.9375	0.0625	0.0625\\
+5	0.9375	0.0625	0.0625\\
+6	0.9375	0.0625	0.0625\\
+7	0.9375	0.0625	0.0625\\
+8	0.90625	0.09375	0.09375\\
+9	0.875	0.125	0.125\\
+10	0.8125	0.1875	0.1875\\
+};
+\addlegendentry{Training}
+
+\addplot [color=mycolor2, line width=1.4pt]
+ plot [error bars/.cd, y dir = both, y explicit]
+ table[row sep=crcr, y error plus index=2, y error minus index=3]{%
+1	0.636363636363636	0.272727272727273	0.272727272727273\\
+2	0.727272727272727	0.181818181818182	0.181818181818182\\
+3	0.727272727272727	0.181818181818182	0.181818181818182\\
+4	0.681818181818182	0.227272727272727	0.227272727272727\\
+5	0.727272727272727	0.181818181818182	0.181818181818182\\
+6	0.727272727272727	0.181818181818182	0.181818181818182\\
+7	0.681818181818182	0.227272727272727	0.227272727272727\\
+8	0.727272727272727	0.181818181818182	0.181818181818182\\
+9	0.727272727272727	0.181818181818182	0.181818181818182\\
+10	0.636363636363636	0.272727272727273	0.272727272727273\\
+};
+\addlegendentry{Validation}
+
+\addplot [color=mycolor1, draw=none, mark size=3.2pt, mark=square*, mark options={solid, fill=gray, black}, forget plot]
+  table[row sep=crcr]{%
+1	0.9375\\
+2	0.9375\\
+3	1\\
+4	1\\
+5	1\\
+6	1\\
+7	1\\
+8	1\\
+9	1\\
+10	1\\
+};
+\addplot [color=mycolor2, draw=none, mark size=3.2pt, mark=square*, mark options={solid, fill=gray, black}, forget plot]
+  table[row sep=crcr]{%
+1	0.625\\
+2	0.8125\\
+3	0.875\\
+4	0.875\\
+5	0.875\\
+6	0.875\\
+7	0.875\\
+8	0.8125\\
+9	0.75\\
+10	0.625\\
+};
+\addplot [color=mycolor1, line width=1.0pt, draw=none, mark size=3.2pt, mark=square*, mark options={solid, fill=white!90!black, black}, forget plot]
+  table[row sep=crcr]{%
+1	0.909090909090909\\
+2	0.909090909090909\\
+3	0.909090909090909\\
+4	0.909090909090909\\
+5	0.909090909090909\\
+6	0.909090909090909\\
+7	0.909090909090909\\
+8	0.909090909090909\\
+9	0.909090909090909\\
+10	0.909090909090909\\
+};
+\addplot [color=mycolor2, line width=1.0pt, draw=none, mark size=3.2pt, mark=square*, mark options={solid, fill=white!90!black, black}, forget plot]
+  table[row sep=crcr]{%
+1	0.363636363636364\\
+2	0.545454545454545\\
+3	0.545454545454545\\
+4	0.454545454545455\\
+5	0.545454545454545\\
+6	0.545454545454545\\
+7	0.454545454545455\\
+8	0.545454545454545\\
+9	0.545454545454545\\
+10	0.363636363636364\\
+};
+\end{axis}
+\end{tikzpicture}%

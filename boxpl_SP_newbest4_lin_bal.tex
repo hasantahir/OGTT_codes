@@ -1,0 +1,64 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+unbounded coords=jump,
+xmin=0.5,
+xmax=1.5,
+xtick={1},
+xlabel style={font=\color{white!15!black}},
+xlabel={Features},
+ymin=0.331818181818182,
+ymax=1.03181818181818,
+ylabel style={font=\color{white!15!black}},
+ylabel={Validation Specificity},
+axis background/.style={fill=white}
+]
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+1	0.818181818181818\\
+1	1\\
+};
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+1	0.363636363636364\\
+1	0.636363636363636\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+0.9625	1\\
+1.0375	1\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+0.9625	0.363636363636364\\
+1.0375	0.363636363636364\\
+};
+\addplot [color=blue, forget plot]
+  table[row sep=crcr]{%
+0.925	0.636363636363636\\
+0.925	0.818181818181818\\
+1.075	0.818181818181818\\
+1.075	0.636363636363636\\
+0.925	0.636363636363636\\
+};
+\addplot [color=red, forget plot]
+  table[row sep=crcr]{%
+0.925	0.727272727272727\\
+1.075	0.727272727272727\\
+};
+\addplot [color=black, draw=none, mark=+, mark options={solid, red}, forget plot]
+  table[row sep=crcr]{%
+nan	nan\\
+};
+\end{axis}
+\end{tikzpicture}%

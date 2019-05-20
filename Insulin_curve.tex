@@ -1,0 +1,48 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=9.558in,
+height=4.695in,
+at={(1.603in,0.634in)},
+scale only axis,
+xmin=0,
+xmax=4,
+xtick={0,1,2,4},
+xticklabels={{0},{30},{60},{120}},
+xlabel style={font=\color{white!15!black}},
+xlabel={Minutes},
+ymin=0,
+ymax=190,
+ylabel style={font=\color{white!15!black}},
+ylabel={Insulin \SI{}{\milli\gram\per\deci\liter}},
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids,
+legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=green, line width=3.0pt, mark size=4.0pt, mark=star, mark options={solid, green}]
+  table[row sep=crcr]{%
+0	12.1099472494348\\
+1	98.5778673700073\\
+2	101.978394875659\\
+4	81.6322155237378\\
+};
+\addlegendentry{Healthy}
+
+\addplot [color=red, line width=3.0pt, mark size=4.0pt, mark=star, mark options={solid, red}]
+  table[row sep=crcr]{%
+0	22.5020231213873\\
+1	111.163179190751\\
+2	157.949421965318\\
+4	155.220231213873\\
+};
+\addlegendentry{Diabetic}
+
+\end{axis}
+\end{tikzpicture}%

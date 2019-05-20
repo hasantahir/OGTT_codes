@@ -1,0 +1,117 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.49804,0.78824,0.49804}%
+\definecolor{mycolor2}{rgb}{0.74510,0.68235,0.83137}%
+\definecolor{mycolor3}{rgb}{0.99216,0.75294,0.52549}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=1,
+xmax=10,
+xlabel style={font=\color{white!15!black}},
+xlabel={Number of Features},
+ymin=0,
+ymax=1,
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids,
+legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=mycolor1, draw=none, mark size=0.4pt, mark=square*, mark options={solid, fill=blue, blue}]
+ plot [error bars/.cd, y dir = both, y explicit]
+ table[row sep=crcr, y error plus index=2, y error minus index=3]{%
+1	0.71875	0.1875	0.1875\\
+2	0.84375	0.09375	0.09375\\
+3	0.875	0.09375	0.09375\\
+4	0.890625	0.109375	0.109375\\
+5	0.859375	0.109375	0.109375\\
+6	0.875	0.09375	0.09375\\
+7	0.890625	0.078125	0.078125\\
+8	0.890625	0.078125	0.078125\\
+9	0.859375	0.078125	0.078125\\
+10	0.8125	0.09375	0.09375\\
+};
+\addlegendentry{Accuracy}
+
+\addplot [color=mycolor2, draw=none, mark size=0.4pt, mark=square*, mark options={solid, fill=red, red}]
+ plot [error bars/.cd, y dir = both, y explicit]
+ table[row sep=crcr, y error plus index=2, y error minus index=3]{%
+1	0.5	0.4375	0.4375\\
+2	0.75	0.1875	0.1875\\
+3	0.75	0.1875	0.1875\\
+4	0.78125	0.21875	0.21875\\
+5	0.71875	0.21875	0.21875\\
+6	0.75	0.1875	0.1875\\
+7	0.78125	0.15625	0.15625\\
+8	0.8125	0.1875	0.1875\\
+9	0.78125	0.21875	0.21875\\
+10	0.78125	0.15625	0.15625\\
+};
+\addlegendentry{Sensitivity}
+
+\addplot [color=mycolor3, draw=none, mark size=0.4pt, mark=square*, mark options={solid, fill=green, green}]
+ plot [error bars/.cd, y dir = both, y explicit]
+ table[row sep=crcr, y error plus index=2, y error minus index=3]{%
+1	0.9375	0.0625	0.0625\\
+2	0.96875	0.03125	0.03125\\
+3	1	0	0\\
+4	1	0	0\\
+5	1	0	0\\
+6	1	0	0\\
+7	0.96875	0.03125	0.03125\\
+8	0.96875	0.03125	0.03125\\
+9	0.90625	0.09375	0.09375\\
+10	0.8125	0.1875	0.1875\\
+};
+\addlegendentry{Specificity}
+
+\addplot [color=mycolor1, draw=none, mark size=3.2pt, mark=square*, mark options={solid, fill=blue, black}, forget plot]
+  table[row sep=crcr]{%
+1	0.7046875\\
+2	0.859375\\
+3	0.89375\\
+4	0.8734375\\
+5	0.8640625\\
+6	0.9\\
+7	0.8859375\\
+8	0.8703125\\
+9	0.86875\\
+10	0.803125\\
+};
+\addplot [color=mycolor2, draw=none, mark size=3.2pt, mark=square*, mark options={solid, fill=red, black}, forget plot]
+  table[row sep=crcr]{%
+1	0.459375\\
+2	0.759375\\
+3	0.7875\\
+4	0.746875\\
+5	0.728125\\
+6	0.8\\
+7	0.775\\
+8	0.7625\\
+9	0.825\\
+10	0.81875\\
+};
+\addplot [color=mycolor3, draw=none, mark size=3.2pt, mark=square*, mark options={solid, fill=green, black}, forget plot]
+  table[row sep=crcr]{%
+1	0.95\\
+2	0.959375\\
+3	1\\
+4	1\\
+5	1\\
+6	1\\
+7	0.996875\\
+8	0.978125\\
+9	0.9125\\
+10	0.7875\\
+};
+\end{axis}
+\end{tikzpicture}%
